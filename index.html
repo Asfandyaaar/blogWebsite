@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+       
+    </style>
+    <title> MyBlog </title>
+</head>
+<body>
+   
+        <div class="header" id="home">
+        <div class="logo ml-5">
+            <h1 class="ml-3 py-3 mb-0 px-4 bg-primary">B</h1>
+            <h2 class="mx-2 mt-2">BLOG <BR>WEBSITE</h2>
+        </div>
+        <div class="toggle" id="navigation">Menu</div>
+        <div class="menu">
+           
+            <ul class="ul">
+                <li> <a href="#" active>Home</a></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#footer">About Us</a></li>
+                <li> <a href="#">Authors</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- end of header -->
+    <section class="section mt-2" id="section2">
+            <article class="text-white">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Enim consequatur sequi cum, dolor fugiat provident.</p>
+                <button class="btn btn-primary"> Contact Us</button>
+            </article>
+    </section>
+    <section class="mt-4">
+        <div class="row mt-5 py-4 ml-3">
+            <div class="col-6 py-5">
+                <h2>About Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, veritatis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint blanditiis
+                     quod unde error quos explicabo, accusamus quia praesentium exercitationem hic?</p>
+                     <button class="btn btn-primary mt-3">Discover More</button>
+            </div>
+            <div class="col-6">
+                <img src="1.jpg" alt="about us" style="max-width: 75%;" data-aos="fade-left" data-aos-duration="1000">
+            </div>
+        </div>
+
+        
+    </section>
+    <section class="services">
+        <article class="d-flex flex-column">
+            <a href="#">Latest Posts</a>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+      <div class="container" data-aos="fade" data-aos-duration="1000">
+          <div class="f one">
+              <div class="inner"></div>
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, quam!</p>
+              <button class="btn btn-primary"> Read More </button>
+          </div>
+          <div class="f two">
+            <div class="inner1"></div>
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, quam!</p>
+            <button class="btn btn-primary"> Read More </button>
+          </div>
+          <div class="f three">
+            <div class="inner2"></div>
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, quam!</p>
+            <button class="btn btn-primary"> Read More </button>
+          </div>
+      </div>
+    </section>
+
+    <div class="third-last mb-5">
+            <article>
+                <h3>Contact Us</h3>
+                <p class="my-4">Lorem ipsum dolor sit amet consectetur.</p>
+                <button class="btn btn-success">Talk To Us</button>
+            </article>
+    </div>
+    <div class="container mb-5">
+        <div class="row c-1">
+            <div class="col-4">
+                <div class="logo ml-5">
+                    <h1 class="ml-3 py-3 mb-0 px-4 bg-primary">B</h1>
+                    <h2 class="mx-2 mt-2">BLOG <BR>WEBSITE</h2>
+                </div>
+            </div>
+            <div class="col-4" >
+                <h2 >Useful Links</h2>
+            </div>
+            <div class="col-4">
+                <h2>Contact Information</h2>
+            </div>
+        </div>
+        <div class="row c-2 mt-2">
+            <div class="col-3 ml-5">
+                <div class="p">
+                    <p>Lorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Laudantium eius\
+                          explicabo delectus fugiat? Quaerat, quia?</p>
+                </div>
+                <div class="links">
+                    <img src="facebook.png" alt="facebook">
+                    <img src="in.png" alt="linkin">
+                    <img src="twitter.png" alt="twitter">
+                </div>
+            </div>
+            <div class="col-3  me mx-5 d-flex">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                </ul>
+                <ul>
+                    <li>Author</li>
+                    <li>Blog</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            
+            <div class="col-3 mr-5">
+                <p> 212, Barrington Court, NewYork</p>
+                <p>Phone:       <a href="#">+92445667721</a></p>
+                <p>Contact:     <a href="#">contact@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#section2" class="top-link">Go to Top</a>
+
+
+    <footer class="bg-dark text-white" id="footer">
+    <span> Copyright &copy Made by ASFANDYAR</span>
+    </footer>
+
+    <script>
+        let btn = document.querySelector(".toggle");
+
+        btn.addEventListener("click",()=>{
+            let ul = document.querySelector(".ul");
+
+            if(ul.style.display === "none"){
+                ul.style.display = "list-item";
+            }else
+            {
+                ul.style.display = "none";
+            }
+           
+        })
+    
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+<script src="app.js"></script>
+</body>
+</html>

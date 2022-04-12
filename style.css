@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  transition:all 0.3s linear;
+}
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0px;
+    background:#000;
+    box-shadow: 0px 0px 9px black;
+    z-index:1;
+}
+.fixed-nav.header a{
+    color:#fff;
+}
+.header a {
+    color:#000;
+  text-decoration: none;
+}
+.header a:hover {
+  color: dodgerblue;
+}
+.menu {
+  margin-left: auto;
+  width: 50%;
+}
+.menu .ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  width: 50%;
+  display: flex;
+}
+.logo h1 {
+  font-size: 50px;
+  /* background:dodgerblue; */
+}
+.logo h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.section {
+  width: 100%;
+  height: 700px;
+  background: url(2.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+article {
+  transform: translate(20%, 186%);
+  width: 727px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+article button {
+  font-family: monospace;
+}
+section h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.col-6 img {
+  border-radius: 10px;
+}
+.services {
+  width: 100%;
+  height: 700px;
+  background: rgb(245, 246, 245);
+}
+.services article {
+  width: 380px;
+  margin: 0 450px;
+  text-align: center;
+}
+.services article a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(6, 16, 65);
+}
+.services article p {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: rgb(112, 9, 43);
+}
+.services .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  transform: translateY(30%);
+}
+.services .container .f {
+  width: 33%;
+  height: 400px;
+  box-shadow: 0 0 8px black;
+  border-radius: 10px;
+  margin: 14px;
+  text-align: center;
+}
+.f h1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+.two {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.three {
+  overflow: hidden;
+}
+.inner {
+  width: 100%;
+  height: 215px;
+  background: url(service1.jpg);
+  background-size: cover;
+}
+.inner1 {
+  width: 100%;
+  height: 215px;
+  background: url(service2.jpg);
+  background-size: cover;
+}
+.inner2 {
+  width: 100%;
+  height: 215px;
+  background: url(service3.jpg);
+  background-size: cover;
+}
+.third-last {
+  width: 100%;
+  height: 700px;
+  background: url(3.jpg);
+  background-size: 100% 100%;
+}
+.third-last article {
+  margin: 0 300px;
+  text-align: center;
+}
+.third-last article h3 {
+  font-size: 23px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+.third-last article p {
+  color: white;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.links img {
+  width: 10%;
+}
+/* .c-1{
+    display:flex;
+    justify-content:space-between;
+}
+.c-2{
+    display:flex;
+    justify-content:space-between;
+} */
+.me {
+  justify-content: space-between;
+}
+.me ul {
+  list-style: circle;
+}
+footer {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+footer span {
+  line-height: 80px;
+}
+.toggle {
+  padding: 10px;
+  font-size: 17px;
+  background: dodgerblue;
+  border-radius: 5px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  menu {
+    margin-left: auto;
+    width: 50%;
+  }
+  .menu .ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    width: 120px;
+    height: 130px;
+  }
+  .menu .ul {
+    text-align: center;
+    display: none;
+    height: 200px;
+    background: dodgerblue;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+  }
+  .menu ul li {
+    margin-top: 8px;
+  }
+  .menu .ul li a {
+    color: white;
+  }
+  .toggle {
+    display: block;
+  }
+}
+
+.top-link{
+    background:skyblue;
+    padding:5px 2rem;
+    text-decoration:none;
+    color:#fff;
+    position:fixed;
+    right:3rem;
+    bottom:3rem;
+    animation:bounce 2s ease infinite;
+    /* visibility:hidden;
+    z-index:-100; */
+}
+.show-link{
+    visibility:visible;
+    z-index:100;
+}
+@keyframes bounce{
+
+    50%{
+        transform:scale(1.3);
+    }
+    100%{
+    transform:scale(1);
+    }
+}
